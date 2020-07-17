@@ -1,0 +1,47 @@
+{
+  "name": "@mapgis/pan-spatial-map-docs",
+  "version": "0.0.1",
+  "private": true,
+  "author": "MapGIS",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lint": "prettier --write 'docs/**/*.md'"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2",
+    "vuepress": "1.0.3",
+    "lint-staged": "9.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mapgis/mapgis-pan-spatial-map-docs/issues"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "quasar",
+    "mapgis",
+    "mapgis-pan-spatial-map",
+    "pan-spatial-map",
+    "pan-spatial",
+    "panspatial",
+    "map"
+  ],
+  "lint-staged": {
+    "*.{js,json,css,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapgis/mapgis-pan-spatial-map-docs.git"
+  }
+}
