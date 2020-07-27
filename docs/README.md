@@ -17,14 +17,15 @@ footer: MIT Licensed | Copyright © 2020-present MapGIS
 
 ```bash
 # clone the project
-git clone https://github.com/mapgis/mapgis-pan-spatial-map.git
+git clone https://github.com/MapGIS/MapGIS-Pan-Spatial-Map.git
 
 # enter the project directory
-cd mapgis-pan-spatial-map
+cd MapGIS-Pan-Spatial-Map
 
 # install dependency
-yarn # Or npm install
+npm install # Or yarn
 
 # develop
-yarn serve # OR npm run serve
+npm run dev # OR yarn dev
+npm run dev:mock # OR yarn dev:mock
 ```

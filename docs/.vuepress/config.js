@@ -2,7 +2,7 @@ const { getNavbarByCategory } = require('./navbar')
 const { getSidebarByCategory } = require('./sidebar')
 
 module.exports = {
-  title: 'MapGIS-Pan-Spatial-Map',
+  title: 'MapGIS Pan-Spatial Map',
   base: '/mapgis-pan-spatial-map-docs/',
   head: [
     ['meta', { name: 'keywords', content: 'mapgis,开源,免费,全空间,一张图' }],
@@ -55,8 +55,16 @@ module.exports = {
         sidebar: {
           '/zh/guide/': [
             {
-              title: '基础',
-              children: getSidebarByCategory('essentials', 'zh')
+              title: '入门',
+              children: getSidebarByCategory('introduction', 'zh')
+            },
+            {
+              title: '开发',
+              children: getSidebarByCategory('development', 'zh')
+            },
+            {
+              title: '构建和部署',
+              children: getSidebarByCategory('build-deployment', 'zh')
             },
             {
               title: '进阶',
@@ -74,11 +82,11 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      description: 'Pan-Spatial Map Application Framwwork'
+      description: 'Pan-Spatial Map Application Platform'
     },
     '/zh/': {
       lang: 'zh-CN',
-      description: '全空间一张图应用框架'
+      description: '全行业一张图应用平台'
     }
   }
 }

@@ -1,7 +1,12 @@
 const sidebar = {
-  essentials: ['/guide/'],
-  advanced: [],
-  other: []
+  introduction: ['/guide/', '/guide/introduction/available-script'],
+  development: ['/guide/development/mock-api'],
+  'build-deployment': [
+    '/guide/build-deployment/build',
+    '/guide/build-deployment/deploy'
+  ],
+  advanced: ['/guide/advanced/style-guide', '/guide/advanced/uset-typescript'],
+  other: ['/guide/other/faq', '/guide/other/from-community']
 }
 
 function getSidebarByCategory(category, lang = 'en') {
