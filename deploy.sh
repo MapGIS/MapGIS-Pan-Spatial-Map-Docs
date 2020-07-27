@@ -13,6 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:mapgis/pan-spatial-map-docs.git master:gh-pages
+git push -f git@github.com:MapGIS/MapGIS-Pan-Spatial-Map-Docs.git master:gh-pages
 
 cd -
