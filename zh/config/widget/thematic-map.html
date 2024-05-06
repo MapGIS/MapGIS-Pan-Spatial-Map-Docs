@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>专题服务 | MapGIS Pan-Spatial Map</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/mapgis-pan-spatial-map-docs/favicon.ico">
+    <meta name="description" content="全行业一张图应用平台">
+    <meta name="keywords" content="mapgis,开源,免费,全空间,一张图">
+    
+    <link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css" as="style"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/40.f35d20f8.js" as="script"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/10.24d51e9a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/11.bb8852ef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/12.43dc56b9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/13.600a4bc3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/14.03c9c185.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/15.e2859453.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/16.8bfd4783.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/17.49fdb1f4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/18.1f2c72b1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/19.42c87290.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/20.ec823e78.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/21.daf7e069.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/22.f67be05b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/23.ca430cd9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/24.21b98634.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/25.c00dc0b4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/26.d981c876.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/27.7039a4df.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/28.69df2930.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/29.d01987c7.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/3.a5e2ad60.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/30.da43a06b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/31.9d6ed078.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/32.7129312a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/33.02b71481.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/34.9ecdd35a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/35.021dea70.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/36.7f3d7df4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/37.68813c86.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/38.18bc1195.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/39.048b8f10.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/4.8431eaef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/41.43d1a2bd.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/42.8c525bd2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/43.7fdb3670.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/44.1b1333b2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/45.91d17848.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/46.9ebc1015.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/47.f3313086.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/48.41b12be1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/49.e6725280.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/5.15f0133f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/50.176d9554.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/51.814ac319.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/52.715c2202.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/53.5c43e0d8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/54.617ed9c6.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/55.98308d2b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/56.1dadd8ba.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/57.f60be398.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/58.da8c3034.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/59.8cc0e12e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/6.49c9592f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/60.0074c1e3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/61.c714c853.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/62.ecdf35f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/63.3830ddfa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/64.5c02d345.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/65.7d52ebc5.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/66.e291c93e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/67.309bc9aa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/68.2ba6c36f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/69.3e452e14.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/7.bf3cb37a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/70.1c5341a1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/71.4c2b1f71.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/72.770842b0.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/8.b9961f2e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/9.ffa94cd0.js">
+    <link rel="stylesheet" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mapgis-pan-spatial-map-docs/zh/" class="home-link router-link-active"><img src="/mapgis-pan-spatial-map-docs/logo.png" alt="MapGIS Pan-Spatial Map" class="logo"> <span class="site-name can-hide">MapGIS Pan-Spatial Map</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>公共配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>微件配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/data-catalog.html" class="sidebar-link">数据目录</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html" class="sidebar-link">底图管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html" aria-current="page" class="active sidebar-link">专题服务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#配置规范" class="sidebar-link">配置规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#分段专题图-subsectionmap-配置规范" class="sidebar-link">分段专题图（SubSectionMap）配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#统计专题图-basemapwithgraph-配置规范" class="sidebar-link">统计专题图（BaseMapWithGraph）配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#聚合标注专题图-label-配置规范" class="sidebar-link">聚合标注专题图（Label）配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#等级符号专题图-statisticlabel-配置规范" class="sidebar-link">等级符号专题图（StatisticLabel）配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#热力图-heatmap-配置规范" class="sidebar-link">热力图（HeatMap）配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#蜂窝图-hexbin-配置规范" class="sidebar-link">蜂窝图（HexBin）配置规范</a></li></ul></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#支持的节点类型" class="sidebar-link">支持的节点类型</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#专题类型" class="sidebar-link">专题类型</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html#统计专题图类型" class="sidebar-link">统计专题图类型</a></li></ul></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/add-data.html" class="sidebar-link">添加数据</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/marker-manager.html" class="sidebar-link">标注管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/comprehensive-query.html" class="sidebar-link">综合查询</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/feature-query.html" class="sidebar-link">要素查询</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/projector-manager.html" class="sidebar-link">投放管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/legend.html" class="sidebar-link">图例</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/particle-effects.html" class="sidebar-link">粒子特效</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/city-grow.html" class="sidebar-link">城市生长</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/overlay-manager.html" class="sidebar-link">标绘管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/plot-animation.html" class="sidebar-link">态势推演</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/plot-manager.html" class="sidebar-link">行业标绘管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/scene-setting.html" class="sidebar-link">场景设置</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/stratified-household.html" class="sidebar-link">分层分户</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="专题服务"><a href="#专题服务" class="header-anchor">#</a> 专题服务</h1> <h2 id="配置规范"><a href="#配置规范" class="header-anchor">#</a> 配置规范</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述专题服务微件配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// 基础配置</span>
+  <span class="token property">&quot;baseConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// IP地址</span>
+    <span class="token property">&quot;baseIp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;develop.smaryun.com&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// Port端口</span>
+    <span class="token property">&quot;basePort&quot;</span><span class="token operator">:</span> <span class="token string">&quot;6163&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 图层是否叠加</span>
+    <span class="token property">&quot;isOverlay&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 图层是否定位</span>
+    <span class="token property">&quot;isLocation&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 初始 index 级别</span>
+    <span class="token property">&quot;startZindex&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 专题配置，数组结构，子元素表示一大类专题</span>
+  <span class="token property">&quot;subjectConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 该类专题id</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;115dc807-63d6-91e4-93a9-31cadb98af60&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 该类专题名称</span>
+      <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;社会经济服务&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 该类专题可见性</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 节点类型，详见下方“支持的节点类型”（该类专题类型不可修改，因为通常以面板形式呈现，所以命名为 panel）</span>
+      <span class="token property">&quot;nodeType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;panel&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 一类专题可以包含多个专题列表或多个专题，数组结构</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">// 下面表示一个专题集合</span>
+        <span class="token punctuation">{</span>
+          <span class="token comment">// 该专题集合id</span>
+          <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;92fd7586-e248-c105-918d-843fb090e24a&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 该专题集合名称</span>
+          <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;人口&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 该专题集合可见性</span>
+          <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token comment">// 节点类型，详见下方“支持的节点类型”（list 表示这是一个专题列表）</span>
+          <span class="token property">&quot;nodeType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;list&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 专题列表，数组结构，专题列表可以继续包含多个专题列表或多个专题</span>
+          <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token comment">// 专题id</span>
+              <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;7e1e283f-3dc8-d53d-cdd9-9633e4c612ca&quot;</span><span class="token punctuation">,</span>
+              <span class="token comment">// 专题名称</span>
+              <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;人口&quot;</span><span class="token punctuation">,</span>
+              <span class="token comment">// 专题可见性</span>
+              <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token comment">// 节点类型，详见下方“支持的节点类型”（subject 表示这是一个专题）</span>
+              <span class="token property">&quot;nodeType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;subject&quot;</span><span class="token punctuation">,</span>
+              <span class="token comment">// 专题类型（SubSectionMap：分段专题图；BaseMapWithGraph：统计专题图；Label：聚合标注专题图；StatisticLabel：等级符号专题图；HeatMap：热力图；HexBin：蜂窝图）</span>
+              <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SubSectionMap&quot;</span><span class="token punctuation">,</span>
+              <span class="token comment">// 专题配置，数组类型，详见下面各专题配置规范</span>
+              <span class="token property">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                  <span class="token comment">// ☆下面为各专题图配置的公共配置部分</span>
+                  <span class="token comment">// 年度, string 类型</span>
+                  <span class="token property">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2013&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// ip（可选，如果不设，则使用baseConfig中的baseIp）</span>
+                  <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;develop.smaryun.com&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// port（可选，如果不设，则使用baseConfig中的basePort）</span>
+                  <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;6163&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 该层级的最小显示级数</span>
+                  <span class="token property">&quot;minZoom&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 该层级的最大显示级数</span>
+                  <span class="token property">&quot;maxZoom&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 矢量图层地址，该项和下面&lt;docName、layerName、layerIndex&gt;只能选择一种填写</span>
+                  <span class="token property">&quot;gdbp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gdbp://MapGISLocal/专题图数据/sfcls/省级行政区x&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 地图文档服务名，该项和上面&lt;gdbp&gt;只能选择一种填写</span>
+                  <span class="token property">&quot;docName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 文档地图图层名，该项和上面&lt;gdbp&gt;只能选择一种填写，且layerName、layerIndex二选一即可</span>
+                  <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 文档地图图层层级，该项和上面&lt;gdbp&gt;只能选择一种填写，且layerName、layerIndex二选一即可</span>
+                  <span class="token property">&quot;layerIndex&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 前端要素查询个数（查询记录过大会造成前端显示过慢）</span>
+                  <span class="token property">&quot;queryFeatureNum&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10000+&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 分段字段</span>
+                  <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;人口数&quot;</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 表格数据设置</span>
+                  <span class="token property">&quot;table&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// 显示字段</span>
+                    <span class="token property">&quot;showFields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                      <span class="token string">&quot;权属名称&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;权属代码&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;总人口万人&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;省名&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;分类索引&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;周长&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;面积&quot;</span><span class="token punctuation">,</span>
+                      <span class="token string">&quot;人口数&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 重设字段对应的别名，用来显示在图表上，如果没有设置，则采用字段本身默认的别名</span>
+                    <span class="token property">&quot;showFieldsTitle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                      <span class="token property">&quot;权属名称&quot;</span><span class="token operator">:</span> <span class="token string">&quot;权属名称1&quot;</span>
+                    <span class="token punctuation">}</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 统计图设置</span>
+                  <span class="token property">&quot;graph&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// 分类字段</span>
+                    <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;省名&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 显示颜色</span>
+                    <span class="token property">&quot;fieldColors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                      <span class="token string">&quot;rgb(29, 137, 243)&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 统计字段</span>
+                    <span class="token property">&quot;showFields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;人口数&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 重设字段对应的别名，用来显示在图表上，如果没有设置，则采用字段本身默认的别名</span>
+                    <span class="token property">&quot;showFieldsTitle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                      <span class="token property">&quot;人口数&quot;</span><span class="token operator">:</span> <span class="token string">&quot;人口数1&quot;</span>
+                    <span class="token punctuation">}</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token comment">// 弹出框数据设置</span>
+                  <span class="token property">&quot;popup&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// 弹框标题字段</span>
+                    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;省名&quot;</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 属性字段列表</span>
+                    <span class="token property">&quot;showFields&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;面积&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;周长&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;省名&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;人口数&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token comment">// 重设字段对应的别名，用来显示在图表上，如果没有设置，则采用字段本身默认的别名</span>
+                    <span class="token property">&quot;showFieldsTitle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                  <span class="token comment">// ☆专题图的样式配置各不相同（大多数是themeStyle，只有统计专题图是graphType），下面分开说明</span>
+                  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token comment">// ...单个专题图样式相关配置</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token comment">// ...</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="分段专题图-subsectionmap-配置规范"><a href="#分段专题图-subsectionmap-配置规范" class="header-anchor">#</a> 分段专题图（SubSectionMap）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述分段专题图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 样式配置</span>
+  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;isHoverAble&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启高亮</span>
+    <span class="token property">&quot;isPopUpAble&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否有开启弹窗</span>
+    <span class="token property">&quot;opacity&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 图层透明度0-100</span>
+    <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 专题图是否显示或隐藏</span>
+    <span class="token property">&quot;highlightStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 高亮样式</span>
+      <span class="token property">&quot;fillStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fillStyle&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 填充区域样式</span>
+      <span class="token property">&quot;lineStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lineStyle&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线样式</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 专题图样式</span>
+      <span class="token comment">// 点样式---------</span>
+      <span class="token property">&quot;radius&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 半径，仅点、符号有用</span>
+      <span class="token property">&quot;outline&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否有外边线，仅点、多边形有用</span>
+      <span class="token property">&quot;outlineColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线颜色</span>
+      <span class="token property">&quot;outlineWidth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线宽度</span>
+      <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 锚点，方向Top、...8个方向</span>
+      <span class="token comment">// 线样式-------</span>
+      <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 线宽度</span>
+      <span class="token property">&quot;dashArray&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 线样式，仅线有用</span>
+      <span class="token property">&quot;cap&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 线头样式</span>
+      <span class="token property">&quot;join&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 拐角样式</span>
+      <span class="token property">&quot;hasShadow&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否启用阴影</span>
+      <span class="token property">&quot;shadowBlur&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影模糊度</span>
+      <span class="token property">&quot;shadowColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影颜色</span>
+      <span class="token property">&quot;shadowOffsetX&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影X轴偏移</span>
+      <span class="token property">&quot;shadowOffsetY&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影Y周偏印</span>
+      <span class="token comment">// 标签样式----------</span>
+      <span class="token property">&quot;fontFamily&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体</span>
+      <span class="token property">&quot;fontColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体颜色</span>
+      <span class="token property">&quot;fontSize&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体大小</span>
+      <span class="token property">&quot;spacing&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字间距</span>
+      <span class="token property">&quot;rotate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字旋转角度</span>
+      <span class="token property">&quot;xOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字X轴偏移</span>
+      <span class="token property">&quot;yOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字Y轴偏移</span>
+      <span class="token property">&quot;lineHeight&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 行高</span>
+      <span class="token property">&quot;maxWidth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 行宽</span>
+      <span class="token property">&quot;align&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 对齐方式</span>
+      <span class="token property">&quot;halo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 描边</span>
+      <span class="token property">&quot;placement&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 是否沿着边线显示,</span>
+      <span class="token comment">// 填充符号样式------</span>
+      <span class="token property">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号Url或者名称(本地自带图片)</span>
+      <span class="token property">&quot;rotate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 旋转角度</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号大小</span>
+      <span class="token property">&quot;xOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号X轴偏移</span>
+      <span class="token property">&quot;yOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号Y轴偏移</span>
+      <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 锚点，方向Top，。。8个方向</span>
+      <span class="token comment">// 填充几何样式---------</span>
+      <span class="token property">&quot;hasOutline&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否有外边线，仅点、多边形有用</span>
+      <span class="token property">&quot;outlineColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线颜色</span>
+      <span class="token property">&quot;outlineWidth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线宽度</span>
+      <span class="token property">&quot;outlineDashArray&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 线样式，仅线有用</span>
+      <span class="token property">&quot;hasShadow&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否启用阴影</span>
+      <span class="token property">&quot;shadowBlur&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影模糊度</span>
+      <span class="token property">&quot;shadowColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影颜色</span>
+      <span class="token property">&quot;shadowOffsetX&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影X轴偏移</span>
+      <span class="token property">&quot;shadowOffsetY&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 阴影Y周偏印</span>
+      <span class="token property">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;symbolStyle&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;outlineSymbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;symbolStyle&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;styleGroups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">// 有对应UI</span>
+      <span class="token comment">// field字段所对应的专题图分段值样式设置，默认用style</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 起始值</span>
+        <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">// 结束值</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 分段样式</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FF0000&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 设定填充颜色</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="统计专题图-basemapwithgraph-配置规范"><a href="#统计专题图-basemapwithgraph-配置规范" class="header-anchor">#</a> 统计专题图（BaseMapWithGraph）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述统计专题图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 统计图类型（pie：饼状图、bar：柱状图、...更多类型详见下方“统计专题图类型”）</span>
+  <span class="token property">&quot;graphType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pie&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="聚合标注专题图-label-配置规范"><a href="#聚合标注专题图-label-配置规范" class="header-anchor">#</a> 聚合标注专题图（Label）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述聚合标注专题图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 样式配置</span>
+  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 非聚合点的半径 50 / 3 / 2</span>
+    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    <span class="token comment">// 聚合点最小半径</span>
+    <span class="token property">&quot;minSize&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 聚合点最大半径 </span>
+    <span class="token property">&quot;maxSize&quot;</span><span class="token operator">:</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 透明度</span>
+    <span class="token property">&quot;globalAlpha&quot;</span><span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 聚合像素半径</span>
+    <span class="token property">&quot;clusterRadius&quot;</span><span class="token operator">:</span> <span class="token number">150</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 最大聚合的级别</span>
+    <span class="token property">&quot;maxClusterZoom&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>  <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 最大显示级别</span>
+    <span class="token property">&quot;maxZoom&quot;</span><span class="token operator">:</span> <span class="token number">19</span><span class="token punctuation">,</span> 
+    <span class="token comment">// 最少聚合点数，点数多于此值才会被聚合</span>
+    <span class="token property">&quot;minPoints&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 聚合的细腻程度，越高聚合后点越密集 </span>
+    <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token number">400</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 聚合文本样式</span>
+      <span class="token comment">// 是否显示</span>
+      <span class="token property">&quot;show&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> 
+      <span class="token property">&quot;fillStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 聚合图标渐变色</span>
+    <span class="token property">&quot;gradient&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 有对应UI</span>
+      <span class="token property">&quot;0&quot;</span><span class="token operator">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;0.5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;1.0&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(255,0,0)&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="等级符号专题图-statisticlabel-配置规范"><a href="#等级符号专题图-statisticlabel-配置规范" class="header-anchor">#</a> 等级符号专题图（StatisticLabel）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述等级符号专题图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 样式配置</span>
+  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;isHoverAble&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启高亮</span>
+    <span class="token property">&quot;isPopUpAble&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否有开启弹窗</span>
+    <span class="token property">&quot;opacity&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 图层透明度0-100</span>
+    <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 专题图是否显示或隐藏</span>
+    <span class="token property">&quot;highlightStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 高亮样式</span>
+      <span class="token property">&quot;fillStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fillStyle&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 填充区域样式</span>
+      <span class="token property">&quot;lineStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lineStyle&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 外边线样式</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 专题图样式</span>
+      <span class="token property">&quot;idShowFont&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否启用文字标签</span>
+      <span class="token property">&quot;fontFamily&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体</span>
+      <span class="token property">&quot;fontColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体颜色</span>
+      <span class="token property">&quot;fontSize&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 字体大小</span>
+      <span class="token property">&quot;fontSpacing&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字间距</span>
+      <span class="token property">&quot;fontXOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字X轴偏移</span>
+      <span class="token property">&quot;fontYOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 文字Y轴偏移</span>
+      <span class="token property">&quot;isShowSymbol&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否启用图标或填充图案</span>
+      <span class="token property">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号Url或者名称</span>
+      <span class="token property">&quot;symbolColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 图标颜色</span>
+      <span class="token property">&quot;symbolRotate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 旋转角度</span>
+      <span class="token property">&quot;symbolSize&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号大小</span>
+      <span class="token property">&quot;symbolXOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号X轴偏移</span>
+      <span class="token property">&quot;symbolYOffset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 符号Y轴偏移</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;styleGroups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">// 有对应UI</span>
+      <span class="token comment">// field字段所对应专题图样式，默认用style</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 起始值</span>
+        <span class="token property">&quot;end&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">// 结束值</span>
+        <span class="token property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 分段样式，注意不可更改符号</span>
+          <span class="token property">&quot;radius&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">// 设定符号大小</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FF9933&quot;</span> <span class="token comment">// 兼容三维，目前三维还是以绘制实心圆的方式，表示符号，需要设置color</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="热力图-heatmap-配置规范"><a href="#热力图-heatmap-配置规范" class="header-anchor">#</a> 热力图（HeatMap）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述热力图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 样式配置</span>
+  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 热力图类型：MAPV | CESIUM，默认CESIUM</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CESIUM&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 最小透明度</span>
+    <span class="token property">&quot;minOpacity&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 最大透明度</span>
+    <span class="token property">&quot;maxOpacity&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 颜色渐变</span>
+    <span class="token property">&quot;gradient&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 有对应UI</span>
+      <span class="token property">&quot;0.25&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(0,0,255)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;0.55&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(0,255,0)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;0.85&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(241,241,15)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;1.0&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(255,0,0)&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// ---- type 为 CESIUM 时的配置----</span>
+    <span class="token comment">// 边界周围的额外空间</span>
+    <span class="token property">&quot;spacing&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 透明度</span>
+    <span class="token property">&quot;alpha&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 模糊值 </span>
+    <span class="token property">&quot;blur&quot;</span><span class="token operator">:</span> <span class="token number">0.85</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 每个热力点半径大小</span>
+    <span class="token property">&quot;radius&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 是否聚合</span>
+    <span class="token property">&quot;useClustering&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+
+    <span class="token comment">// ---- type 为 MAPV 时的配置----</span>
+    <span class="token comment">// 最大权重值</span>
+    <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 每个热力点半径大小</span>
+    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h3 id="蜂窝图-hexbin-配置规范"><a href="#蜂窝图-hexbin-配置规范" class="header-anchor">#</a> 蜂窝图（HexBin）配置规范</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述蜂窝图配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// ... // 其他同上方公共配置</span>
+  <span class="token comment">// 样式配置</span>
+  <span class="token property">&quot;themeStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 最小透明度</span>
+    <span class="token property">&quot;minOpacity&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 最大透明度</span>
+    <span class="token property">&quot;maxOpacity&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 每个蜂窝半径大小</span>
+    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 最大权重值</span>
+    <span class="token property">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 透明度</span>
+    <span class="token property">&quot;globalAlpha&quot;</span><span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token comment">// 有对应UI</span>
+    <span class="token comment">// 标签样式</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;show&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fillStyle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;shadowColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;font&quot;</span><span class="token operator">:</span> <span class="token string">&quot;15px Arial&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;shadowBlur&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 颜色渐变</span>
+    <span class="token property">&quot;gradient&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 有对应UI</span>
+      <span class="token property">&quot;0.25&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(0,0,255)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;0.55&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(0,255,0)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;0.85&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(241,241,15)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;1.0&quot;</span><span class="token operator">:</span> <span class="token string">&quot;rgb(255,0,0)&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <h2 id="支持的节点类型"><a href="#支持的节点类型" class="header-anchor">#</a> 支持的节点类型</h2> <p><code>subjectConfig</code>描述的是专题配置，它由专题分类列表构成，每个专题分类下又可以划分为多个专题列表或直接包含多个专题，专题列表又可以划分专题列表或直接包含多个专题，这样，整个专题服务配置形成了一颗专题服务配置树。</p> <table><thead><tr><th>类型</th> <th>类型描述</th></tr></thead> <tbody><tr><td>panel</td> <td>专题分类，专题配置树展开后第一级</td></tr> <tr><td>list</td> <td>分类下的专题列表</td></tr> <tr><td>subject</td> <td>专题</td></tr></tbody></table> <h2 id="专题类型"><a href="#专题类型" class="header-anchor">#</a> 专题类型</h2> <table><thead><tr><th>类型</th> <th>类型描述</th></tr></thead> <tbody><tr><td>SubSectionMap</td> <td>分段专题图，前端分段专题图，支持点、线、区等类型</td></tr> <tr><td>BaseMapWithGraph</td> <td>统计专题图，前端统计专题图</td></tr> <tr><td>Label</td> <td>聚合标注专题图，基于地图文档或者图层的聚合标注</td></tr> <tr><td>StatisticLabel</td> <td>等级符号专题图，以某一属性字段值作为标注的内容，不进行二次统计，展现方式类似于标注专题图</td></tr> <tr><td>HeatMap</td> <td>热力图</td></tr> <tr><td>HexBin</td> <td>蜂窝图</td></tr></tbody></table> <h2 id="统计专题图类型"><a href="#统计专题图类型" class="header-anchor">#</a> 统计专题图类型</h2> <table><thead><tr><th>类型</th> <th>类型描述</th></tr></thead> <tbody><tr><td>point</td> <td>散点图</td></tr> <tr><td>pie</td> <td>饼图</td></tr> <tr><td>bar</td> <td>柱状图</td></tr> <tr><td>bar3d</td> <td>3D 柱状图</td></tr> <tr><td>line</td> <td>折线图</td></tr> <tr><td>ring</td> <td>环状图</td></tr></tbody></table></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/mapgis-pan-spatial-map-docs/edit/master/docs/zh/config/widget/thematic-map.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/7/4 09:55:23</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html" class="prev">
+        底图管理
+      </a></span> <span class="next"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/add-data.html">
+        添加数据
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-3414bdeb><div class="my-popup-container" data-v-3414bdeb><div class="my-popup-exit" data-v-3414bdeb></div> <img src="" alt data-v-3414bdeb></div></div></div></div>
+    <script src="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/40.f35d20f8.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微件扩展 | MapGIS Pan-Spatial Map</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/mapgis-pan-spatial-map-docs/favicon.ico">
+    <meta name="description" content="全行业一张图应用平台">
+    <meta name="keywords" content="mapgis,开源,免费,全空间,一张图">
+    
+    <link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css" as="style"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/44.1b1333b2.js" as="script"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/10.24d51e9a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/11.bb8852ef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/12.43dc56b9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/13.600a4bc3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/14.03c9c185.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/15.e2859453.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/16.8bfd4783.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/17.49fdb1f4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/18.1f2c72b1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/19.42c87290.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/20.ec823e78.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/21.daf7e069.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/22.f67be05b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/23.ca430cd9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/24.21b98634.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/25.c00dc0b4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/26.d981c876.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/27.7039a4df.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/28.69df2930.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/29.d01987c7.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/3.a5e2ad60.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/30.da43a06b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/31.9d6ed078.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/32.7129312a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/33.02b71481.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/34.9ecdd35a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/35.021dea70.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/36.7f3d7df4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/37.68813c86.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/38.18bc1195.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/39.048b8f10.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/4.8431eaef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/40.f35d20f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/41.43d1a2bd.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/42.8c525bd2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/43.7fdb3670.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/45.91d17848.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/46.9ebc1015.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/47.f3313086.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/48.41b12be1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/49.e6725280.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/5.15f0133f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/50.176d9554.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/51.814ac319.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/52.715c2202.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/53.5c43e0d8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/54.617ed9c6.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/55.98308d2b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/56.1dadd8ba.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/57.f60be398.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/58.da8c3034.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/59.8cc0e12e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/6.49c9592f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/60.0074c1e3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/61.c714c853.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/62.ecdf35f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/63.3830ddfa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/64.5c02d345.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/65.7d52ebc5.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/66.e291c93e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/67.309bc9aa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/68.2ba6c36f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/69.3e452e14.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/7.bf3cb37a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/70.1c5341a1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/71.4c2b1f71.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/72.770842b0.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/8.b9961f2e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/9.ffa94cd0.js">
+    <link rel="stylesheet" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mapgis-pan-spatial-map-docs/zh/" class="home-link router-link-active"><img src="/mapgis-pan-spatial-map-docs/logo.png" alt="MapGIS Pan-Spatial Map" class="logo"> <span class="site-name can-hide">MapGIS Pan-Spatial Map</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/guide/advanced/add-widget.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/guide/advanced/add-widget.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>产品介绍</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mapgis-pan-spatial-map-docs/zh/guide/" aria-current="page" class="sidebar-link">开始使用</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进阶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>扩展</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其它</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="微件扩展"><a href="#微件扩展" class="header-anchor">#</a> 微件扩展</h1> <h2 id="增加扩展微件包"><a href="#增加扩展微件包" class="header-anchor">#</a> 增加扩展微件包</h2> <ol><li><p>在 packages 文件夹里新建目录文件 kuo-zhan-wei-jian，作为扩展微件专属目录。如果已有目录，可省略该步骤。
+mapgis-pan-spatial-map-pro-antd/packages/kuo-zhan-wei-jian。</p></li> <li><p>修改 package.json 文件里，name 及 description。
+<img src="/mapgis-pan-spatial-map-docs/images/扩展微件1.png" alt="扩展微件专属目录"></p></li></ol> <h2 id="新增微件"><a href="#新增微件" class="header-anchor">#</a> 新增微件</h2> <ol><li><p>在新建目录下新建 src/widgets/kuo-zhan-wei-jian 文件夹。</p></li> <li><p>在新建文件夹下新建 kuozhanweijian.vue。</p></li></ol> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    扩展微件
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mp-window-wrapper</span> <span class="token attr-name">:visible</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>visible<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mp-window</span>
+        <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>微件内部弹出框<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:visible</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:vertical-offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:max-width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>360<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:has-padding</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">anchor</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bottom-center<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>微件内部弹出框<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mp-window</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mp-window-wrapper</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Mixins<span class="token punctuation">,</span> Component<span class="token punctuation">,</span> Watch <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-property-decorator'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  api<span class="token punctuation">,</span>
+  baseConfigInstance<span class="token punctuation">,</span>
+  WidgetMixin<span class="token punctuation">,</span>
+  LayerType<span class="token punctuation">,</span>
+  IGSSceneSublayerType<span class="token punctuation">,</span>
+  LoadStatus<span class="token punctuation">,</span>
+  Objects
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapgis/web-app-framework'</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> api<span class="token punctuation">,</span> baseConfigInstance <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapgis/pan-spatial-map-common'</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'KuoZhanWeiJian'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">KuoZhanWeiJian</span> <span class="token keyword">extends</span> <span class="token class-name">Mixins</span><span class="token punctuation">(</span>WidgetMixin<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 从微件配置里获取ip</span>
+  <span class="token keyword">get</span> <span class="token function">ip</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>widgetInfo<span class="token punctuation">.</span>config<span class="token punctuation">.</span>ip <span class="token operator">||</span> baseConfigInstance<span class="token punctuation">.</span>config<span class="token punctuation">.</span>ip
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 从微件配置里获取port</span>
+  <span class="token keyword">get</span> <span class="token function">port</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>widgetInfo<span class="token punctuation">.</span>config<span class="token punctuation">.</span>port <span class="token operator">||</span> baseConfigInstance<span class="token punctuation">.</span>config<span class="token punctuation">.</span>ip
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 动态获取基础目录树上已勾选的三维数据(地形和模型)
+   */</span>
+  @<span class="token function">Watch</span><span class="token punctuation">(</span><span class="token string">'document'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> immediate<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> deep<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token function">getScenes</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>document<span class="token punctuation">)</span> <span class="token keyword">return</span>
+    <span class="token keyword">const</span> layers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>document<span class="token punctuation">.</span>defaultMap
+      <span class="token punctuation">.</span><span class="token function">clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">getFlatLayers</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">layer<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>layer<span class="token punctuation">.</span>loadStatus <span class="token operator">===</span> LoadStatus<span class="token punctuation">.</span>loaded<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>layer<span class="token punctuation">.</span>type <span class="token operator">===</span> LayerType<span class="token punctuation">.</span>IGSScene<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>layer<span class="token punctuation">.</span>activeScene<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">const</span> <span class="token punctuation">{</span> type <span class="token punctuation">}</span> <span class="token operator">=</span> layer<span class="token punctuation">.</span>activeScene<span class="token punctuation">.</span>sublayers<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>
+                type <span class="token operator">===</span> IGSSceneSublayerType<span class="token punctuation">.</span>elevation <span class="token operator">||</span>
+                type <span class="token operator">===</span> IGSSceneSublayerType<span class="token punctuation">.</span>modelCache
+              <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 剖切分析支持地形和模型</span>
+                layers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>layer<span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>layers<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">/**
+   * 保存微件配置到管理平台
+   */</span>
+  <span class="token function">saveConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> ip<span class="token punctuation">,</span> port <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span>
+    <span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span> ip<span class="token punctuation">,</span> port <span class="token punctuation">}</span>
+    api
+      <span class="token punctuation">.</span><span class="token function">saveWidgetConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'kuo-zhan-wei-jian'</span><span class="token punctuation">,</span>
+        config<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'保存配置成功'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'保存配置失败'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>less<span class="token punctuation">&quot;</span></span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><img src="/mapgis-pan-spatial-map-docs/images/扩展微件2.png" alt="新增微件"> <ol start="3"><li>在 widgets 文件夹里新建 index.js,用于导出微件。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token punctuation">{</span>
+  <span class="token keyword">default</span> <span class="token keyword">as</span> KuoZhanWeiJian
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./kuo-zhan-wei-jian/kuo-zhan-wei-jian.vue'</span>
+</code></pre></div><ol start="4"><li>在 src 文件夹里新建 index.ts,用于注册微件。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> KuoZhanWeiJian <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./widgets'</span>
+
+<span class="token keyword">const</span> components <span class="token operator">=</span> <span class="token punctuation">[</span>KuoZhanWeiJian<span class="token punctuation">]</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">install</span> <span class="token operator">=</span> <span class="token parameter">Vue</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  components<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">component</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>
+      <span class="token punctuation">(</span>component<span class="token punctuation">.</span>options <span class="token operator">&amp;&amp;</span> component<span class="token punctuation">.</span>options<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token operator">||</span> component<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+      component
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  install
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="微件配置"><a href="#微件配置" class="header-anchor">#</a> 微件配置</h2> <ol><li>在 pan-spatial-map-mock-server/mock/data/widgets 里增加 kuo-zhan-wei-jian 文件夹，新建 manifest.json 文件。</li></ol> <p>支持两种类型的 widget：in-panel 和 off-panel，每个 widget 都有一个 openAtStart 控制其是否初始打开。</p> <p><strong>In-panel</strong>，需要在一个 panel 中打开的
+<strong>Off-panel</strong>，不需要在 panel 中打开</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token comment">// widget的标识名称，需要与widget文件夹的名称一致</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;KuoZhanWeiJian&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的作者</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的描述</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的组件名，如果inPanel为false，则表示widget本身UI，</span>
+  <span class="token comment">// 如果inPanel为true，其icon会显示到地图占位区域或内容区域中，widget本身UI会展示到Panel中</span>
+  <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;KuoZhanWeiJian&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget图标,默认使用images/icon.svg</span>
+  <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;svg class=\&quot;icon\&quot; viewBox=\&quot;0 0 1024 1024\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;200\&quot; height=\&quot;200\&quot;&gt;&lt;defs&gt;&lt;style/&gt;&lt;/defs&gt;&lt;path d=\&quot;M897.706667 1023.573333H178.346667l421.546666-506.026666c180.48 117.76 297.813333 300.373333 297.813334 506.026666z m0-1021.866666H131.413333v919.466666z\&quot;/&gt;&lt;/svg&gt;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget属性表</span>
+  <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 确定widget是否支持2D，默认为true</span>
+    <span class="token string">&quot;2D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 确定widget是否支持3D，默认为false</span>
+    <span class="token string">&quot;3D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设置widget是否inPanel，如果不在一个panel中，widget会直接展示，默认为true</span>
+    <span class="token string">&quot;inPanel&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设置为true的话，默认加载config文件，反之不加载，默认为true</span>
+    <span class="token string">&quot;hasConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设为为true的话，builder会加载setting页。如果为false并且widget可配置则展示一个Json编辑器</span>
+    <span class="token string">&quot;hasSettingPage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 如果有setting页，settingUiComponent表示设置页ui的组件名</span>
+    <span class="token string">&quot;settingUiComponent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>inPanel 为 false 示例</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;综合查询&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpComprehensiveQuery&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&lt;svg class=\&quot;icon\&quot; viewBox=\&quot;0 0 1024 1024\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot; width=\&quot;16\&quot; height=\&quot;16\&quot;&gt;&lt;defs&gt;&lt;style/&gt;&lt;/defs&gt;&lt;path d=\&quot;M1010.08 885.32L810.66 685.94c-9-9-21.2-14-34-14h-32.6c55.2-70.6 88-159.38 88-255.98C832.06 186.18 645.84 0 416.04 0S0 186.18 0 415.96s186.22 415.96 416.04 415.96c96.6 0 185.42-32.8 256.02-88v32.6c0 12.8 5 25 14 34l199.42 199.38c18.8 18.8 49.2 18.8 67.8 0l56.6-56.6c18.8-18.8 18.8-49.18.2-67.98zm-594.04-181.4c-159.08 0-288-128.68-288-287.96 0-159.06 128.7-287.96 288-287.96 159.08 0 288 128.68 288 287.96 0 159.06-128.7 287.96-288 287.96zm.04-479.92c-81.56 0-147.68 66.1-147.68 147.66 0 65.92 96.52 186.1 133.5 229.72a18.48 18.48 0 0028.36 0c36.98-43.62 133.5-163.78 133.5-229.72 0-81.56-66.12-147.66-147.68-147.66zm0 192c-26.52 0-48-21.5-48-48 0-26.52 21.5-48 48-48s48 21.48 48 48c0 26.5-21.5 48-48 48z\&quot;/&gt;&lt;/svg&gt;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;2D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;3D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;inPanel&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;hasSettingPage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;settingUiComponent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><img src="/mapgis-pan-spatial-map-docs/images/扩展微件5.png" alt="微件配置"> <ol start="2"><li><p>配置 manifest.json 文件中的 properties. hasConfig 为 true；在 kuo-zhan-wei-jian 文件夹里新建 config.json 文件用来配置。
+可在 pan-spatial-map-mock-server/mock/data/configs 里新建 kuo-zhan-wei-jian 文件夹，把 config.json 文件复制到新建文件夹里。后台保存的配置会在这个路径。
+<img src="/mapgis-pan-spatial-map-docs/images/扩展微件3.png" alt="微件配置"></p></li> <li><p>在 pan-spatial-map-mock-server/mock/data/app.json 里配置新增的微件。</p></li></ol> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;mapWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_f13b2780-8303-45f4-a6c7-6feda63ecfc1&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/kuo-zhan-wei-jian&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">30</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">178</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;contentWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;groups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;header&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgetStructure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-right&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;bottom&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_f13b2780-8314-45f4-b7c7-6feda63edhd2&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/kuo-zhan-wei-jian&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgetStructure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;relativeTo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;content&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toolbar&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_f13b2791-8325-45h5-b7d8-6feda63edhe3&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/kuo-zhan-wei-jian&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;widgetStructure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_f13b2791-8325-45h5-b7d8-6feda63edhe3&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-right&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="运行程序"><a href="#运行程序" class="header-anchor">#</a> 运行程序</h2> <ol><li>在 pan-spatial-map-framework/src/main.js 中引用扩展微件包。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> KuoZhanWeiJian <span class="token keyword">from</span> <span class="token string">'@mapgis/kuo-zhan-wei-jian'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>KuoZhanWeiJian<span class="token punctuation">)</span>
+</code></pre></div><ol start="2"><li>运行 yarn install，在 node_modules 中@mapgis 文件夹中可以看到 kuo-zhan-wei-jian 引用目录。</li></ol> <img src="/mapgis-pan-spatial-map-docs/images/扩展微件6.png" alt="引用新增微件"> <ol start="3"><li>运行 yarn dev:mock 后，可在浏览器里查看添加效果。</li></ol> <img src="/mapgis-pan-spatial-map-docs/images/扩展微件4.png" alt="新增微件效果"> <h2 id="构建和发布"><a href="#构建和发布" class="header-anchor">#</a> 构建和发布</h2> <p>以上只是在 mock server 方式下，增加微件；如果想在发布后的程序中看到新增微件，则需要先 build，替换服务中相应的内容。</p> <p>具体步骤可参考 <a href="/mapgis-pan-spatial-map-docs/zh/guide/development/deploy.html">构建和发布</a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/mapgis-pan-spatial-map-docs/edit/master/docs/zh/guide/advanced/add-widget.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2024/3/5 16:00:27</span></div></footer> <!----> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-3414bdeb><div class="my-popup-container" data-v-3414bdeb><div class="my-popup-exit" data-v-3414bdeb></div> <img src="" alt data-v-3414bdeb></div></div></div></div>
+    <script src="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/44.1b1333b2.js" defer></script>
+  </body>
+</html>

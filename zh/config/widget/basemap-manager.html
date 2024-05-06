@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>底图管理 | MapGIS Pan-Spatial Map</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/mapgis-pan-spatial-map-docs/favicon.ico">
+    <meta name="description" content="全行业一张图应用平台">
+    <meta name="keywords" content="mapgis,开源,免费,全空间,一张图">
+    
+    <link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css" as="style"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/25.c00dc0b4.js" as="script"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/10.24d51e9a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/11.bb8852ef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/12.43dc56b9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/13.600a4bc3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/14.03c9c185.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/15.e2859453.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/16.8bfd4783.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/17.49fdb1f4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/18.1f2c72b1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/19.42c87290.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/20.ec823e78.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/21.daf7e069.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/22.f67be05b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/23.ca430cd9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/24.21b98634.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/26.d981c876.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/27.7039a4df.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/28.69df2930.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/29.d01987c7.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/3.a5e2ad60.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/30.da43a06b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/31.9d6ed078.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/32.7129312a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/33.02b71481.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/34.9ecdd35a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/35.021dea70.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/36.7f3d7df4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/37.68813c86.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/38.18bc1195.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/39.048b8f10.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/4.8431eaef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/40.f35d20f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/41.43d1a2bd.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/42.8c525bd2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/43.7fdb3670.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/44.1b1333b2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/45.91d17848.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/46.9ebc1015.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/47.f3313086.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/48.41b12be1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/49.e6725280.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/5.15f0133f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/50.176d9554.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/51.814ac319.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/52.715c2202.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/53.5c43e0d8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/54.617ed9c6.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/55.98308d2b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/56.1dadd8ba.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/57.f60be398.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/58.da8c3034.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/59.8cc0e12e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/6.49c9592f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/60.0074c1e3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/61.c714c853.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/62.ecdf35f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/63.3830ddfa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/64.5c02d345.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/65.7d52ebc5.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/66.e291c93e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/67.309bc9aa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/68.2ba6c36f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/69.3e452e14.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/7.bf3cb37a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/70.1c5341a1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/71.4c2b1f71.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/72.770842b0.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/8.b9961f2e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/9.ffa94cd0.js">
+    <link rel="stylesheet" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mapgis-pan-spatial-map-docs/zh/" class="home-link router-link-active"><img src="/mapgis-pan-spatial-map-docs/logo.png" alt="MapGIS Pan-Spatial Map" class="logo"> <span class="site-name can-hide">MapGIS Pan-Spatial Map</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>公共配置</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>微件配置</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/data-catalog.html" class="sidebar-link">数据目录</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html" aria-current="page" class="active sidebar-link">底图管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html#配置规范" class="sidebar-link">配置规范</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html#支持的数据类型" class="sidebar-link">支持的数据类型</a></li><li class="sidebar-sub-header"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/basemap-manager.html#默认配置" class="sidebar-link">默认配置</a></li></ul></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html" class="sidebar-link">专题服务</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/add-data.html" class="sidebar-link">添加数据</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/marker-manager.html" class="sidebar-link">标注管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/comprehensive-query.html" class="sidebar-link">综合查询</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/feature-query.html" class="sidebar-link">要素查询</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/projector-manager.html" class="sidebar-link">投放管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/legend.html" class="sidebar-link">图例</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/particle-effects.html" class="sidebar-link">粒子特效</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/city-grow.html" class="sidebar-link">城市生长</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/overlay-manager.html" class="sidebar-link">标绘管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/plot-animation.html" class="sidebar-link">态势推演</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/plot-manager.html" class="sidebar-link">行业标绘管理</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/scene-setting.html" class="sidebar-link">场景设置</a></li><li><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/stratified-household.html" class="sidebar-link">分层分户</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="底图管理"><a href="#底图管理" class="header-anchor">#</a> 底图管理</h1> <h2 id="配置规范"><a href="#配置规范" class="header-anchor">#</a> 配置规范</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 这个文件描述底图管理微件配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// 底图列表</span>
+  <span class="token property">&quot;baseMapList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 底图名称</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 底图缩略图图片路径，可通过上传设置</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 是否可见，设置为“true”，则会显示在管理界面上；设置为“false”，不会在界面上显示</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 是否被选择，设置为true，表示默认被选择，默认加载，软件初始化时，会将选中的底图在地图视图中显示；设置为false，表示默认不加载</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token comment">// 描述</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 该底图下的数据列表</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token comment">// 类型，二维：IGSTile、IGSMapImage、IGSVector、OGCWMS、OGCWMTS、ArcGISMapImage、ArcGISTile、VectorTile；三维:IGSScene、TILE3D、ModelCache、STKTerrain</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// url，值由commonData当中参数serverUrl配置得到</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 名称</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，令牌key，默认值为token，可自定义，比如天地图是tk,值由commonData当中参数tokenKey配置得到</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，令牌value，值由commonData当中参数token配置得到</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 描述</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 该子图层的配置参数</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token comment">// ip</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// port</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// name</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 图层类型</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// url</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 服务类型，用于管理平台编辑回显</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// xxx</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// guid 唯一标识符</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ba4584cc-762d-4c7a-b92c-89848787ac67&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 底图名称</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 底图缩略图图片路径，可通过上传设置</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 是否可见，设置为“true”，则会显示在管理界面上；设置为“false”，不会在界面上显示</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 是否被选择，设置为true，表示默认被选择，默认加载，软件初始化时，会将选中的底图在地图视图中显示；设置为false，表示默认不加载</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+       <span class="token comment">// 描述</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 该底图下的数据列表</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token comment">// 类型，二维：IGSTile、IGSMapImage、IGSVector、OGCWMS、OGCWMTS、ArcGISMapImage、ArcGISTile、VectorTile；三维:IGSScene、TILE3D、ModelCache、STKTerrain</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// url，值由commonData当中参数serverUrl配置得到</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 名称</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，令牌key，默认值为token，可自定义，比如天地图是tk,值由commonData当中参数tokenKey配置得到</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，令牌value，值由commonData当中参数token配置得到</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 描述</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 该子图层的配置参数</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+            <span class="token comment">// ip</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// port</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// name</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 图层类型</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// url</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;xxx&quot;</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 服务类型，用于管理平台编辑回显</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// ...</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token comment">// guid 唯一标识符</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;790d84a0-8810-4f83-a895-1cfefebd84e2&quot;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//...</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// 索引底图标识，与底图列表中其中一项的guid保持一致</span>
+  <span class="token property">&quot;indexBaseMapGUID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ba4584cc-762d-4c7a-b92c-89848787ac67&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 设置是否为单底图模式</span>
+  <span class="token property">&quot;isSingleMode&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 设置是否显示底图</span>
+   <span class="token property">&quot;isShow&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="支持的数据类型"><a href="#支持的数据类型" class="header-anchor">#</a> 支持的数据类型</h2> <table><thead><tr><th>数据类型</th> <th>数据类型描述</th> <th>用到的参数</th> <th>地图模式</th></tr></thead> <tbody><tr><td>OGCWMS</td> <td>OGC WMS 服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>OGCWMTS</td> <td>OGC WMTS 服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>ArcGISTile</td> <td>ArcGIS 瓦片服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>ArcGISMapImage</td> <td>ArcGIS 地图服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>IGSTile</td> <td>MapGIS 瓦片服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>IGSMapImage</td> <td>MapGIS 地图服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>IGSVector</td> <td>MapGIS 图层地图服务</td> <td><code>type、url、name、tokenKey(可选)、token(可选)、description、commonData、serviceType</code></td> <td>2D、3D</td></tr> <tr><td>VectorTile</td> <td>矢量瓦片</td> <td><code>type、url、name</code></td> <td>2D、3D</td></tr> <tr><td>IGSScene</td> <td>MapGIS 场景服务</td> <td><code>type、url、name、description、commonData、serviceType</code></td> <td>3D</td></tr> <tr><td>TILE3D</td> <td>3DTiles服务</td> <td><code>type、url、name、description、commonData、serviceType</code></td> <td>3D</td></tr> <tr><td>ModelCache</td> <td>MapGIS M3D模型缓存服务</td> <td><code>type、url、name、description、commonData、serviceType</code></td> <td>3D</td></tr> <tr><td>STKTerrain</td> <td>STK地形</td> <td><code>type、url、name、description、commonData、serviceType</code></td> <td>3D</td></tr></tbody></table> <h2 id="默认配置"><a href="#默认配置" class="header-anchor">#</a> 默认配置</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;baseMapList&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像底图&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/img_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/img_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像注记&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cia_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cia_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e54121e8-2a3a-454f-80ce-196dd73e789e&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量底图&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/vec_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/vec_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量注记&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cva_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cva_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;99aade2c-60fd-4baa-9c2b-8c6e15e61917&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图地形&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图地形晕渲&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/ter_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/ter_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图地形注记&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cta_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/cta_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;78881d5b-1d36-468f-a7c3-96752aca07e4&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/upload/basemap-tianditu-img.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tdt&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.TiandituType.IMG&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;projection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ol.proj.get('EPSG:4326')&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像底图&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tdt&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.TiandituType.CIA&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;projection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ol.proj.get('EPSG:4326')&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图影像注记&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0480d876-446b-4cb2-b593-0f9320df860d&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/upload/basemap-tianditu-vec.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tdt&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.TiandituType.VEC&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;projection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ol.proj.get('EPSG:4326')&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量底图&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tdt&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.TiandituType.CVA&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;projection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ol.proj.get('EPSG:4326')&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天地图矢量注记&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;06ab2882-b27d-41fb-be73-815a0a5cdc8d&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS影像图&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Imagery&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_Imagery_World_2D/MapServer&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_Imagery_World_2D/MapServer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;ArcGISTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3dd19f26-3034-4c0b-a633-2160329849b5&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS街道图&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Streets&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://services.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;ArcGISTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c321198d-e2d3-45db-a31b-759042264476&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS影像图2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/upload/basemap-arcgis-img.jpg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arcgis&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.ArcGISLayerType.ImageryWorld2D&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Imagery&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;70b687a9-d343-4912-997c-ca96eb004a35&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS街道图2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/upload/basemap-arcgis-street.jpg&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;serverType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arcgis&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zondy.Enum.Map.ArcGISLayerType.StreetMapWorld2D&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;layerName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Streets&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a18e743c-32b5-453d-ac5d-8c9433b50784&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS文档&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS文档&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/docs/Hubei4326&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSMapImage&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSMapImage&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/docs/Hubei4326&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;IGSMapImage&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;aa8d7df3-ada0-459f-9b78-239ee1b93711&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS瓦片&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS瓦片&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/tile/DEM250&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/tile/DEM250&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;IGSTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9864270c-3a09-445c-85f3-2f5013b56959&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS图层&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS图层&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/layers?gdbps=gdbp://MapGisLocal/专题图数据/sfcls/中国地级市x&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSVector&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSVector&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/layers?gdbps=gdbp://MapGisLocal/专题图数据/sfcls/中国地级市x&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;IGSVector&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2cb4b8eb-45b1-41ea-a321-7ca80949beae&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMS&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/ogc/doc/北京市0630_hdf/WMSServer&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/ogc/doc/北京市0630_hdf/WMSServer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMS&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;611b6335-5bc1-4c13-ba77-7115d884f537&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/vec_c/wmts&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OGCWMTS&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://t0.tianditu.gov.cn/vec_c/wmts&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;OGCWMTS&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ddaabf906d4b5418aed0078e1657029&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tk&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c19fb42b-fb9b-4455-b5a5-437cb0f9d9bc&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS文档&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS文档&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://219.142.81.85/arcgis/rest/services/MAS12P51000011/MapServer&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISMapImage&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISMapImage&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://219.142.81.85/arcgis/rest/services/MAS12P51000011/MapServer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;ArcGISMapImage&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;48172cf3-ea34-4ec2-acc5-249890031f23&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS瓦片&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGIS瓦片&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://219.142.81.85/arcgis/rest/services/20wanZL/MapServer&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ArcGISTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://219.142.81.85/arcgis/rest/services/20wanZL/MapServer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;ArcGISTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;483e9096-9125-4856-9148-093eb5c996d2&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;矢量瓦片&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;矢量瓦片&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/vtiles/styles/OSM全中国经纬度.json&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;VectorTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;VectorTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/vtiles/styles/OSM全中国经纬度.json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;VectorTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2ebf4c13-4198-4829-aa59-b4e6570cf7e1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;索引底图&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;image&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/file/default/basemap.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;select&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京市&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;索引底图&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/tile/北京市&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSTile&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;commonData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;layerServiceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;IGSTile&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;serverUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://192.168.21.191:6163/igs/rest/mrms/tile/北京市&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;tokenKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;wfsUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;extent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;serviceType&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;server&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;IGSTile&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;guid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5dbb6735-f969-4a4e-a282-c36e5a376dfa&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;indexBaseMapGUID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5dbb6735-f969-4a4e-a282-c36e5a376dfa&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isSingleMode&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isShow&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/mapgis-pan-spatial-map-docs/edit/master/docs/zh/config/widget/basemap-manager.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2023/7/25 11:02:40</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mapgis-pan-spatial-map-docs/zh/config/widget/data-catalog.html" class="prev">
+        数据目录
+      </a></span> <span class="next"><a href="/mapgis-pan-spatial-map-docs/zh/config/widget/thematic-map.html">
+        专题服务
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-3414bdeb><div class="my-popup-container" data-v-3414bdeb><div class="my-popup-exit" data-v-3414bdeb></div> <img src="" alt data-v-3414bdeb></div></div></div></div>
+    <script src="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/25.c00dc0b4.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | MapGIS Pan-Spatial Map</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/mapgis-pan-spatial-map-docs/favicon.ico">
+    <meta name="description" content="全行业一张图应用平台">
+    <meta name="keywords" content="mapgis,开源,免费,全空间,一张图">
+    
+    <link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css" as="style"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" as="script"><link rel="preload" href="/mapgis-pan-spatial-map-docs/assets/js/54.617ed9c6.js" as="script"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/10.24d51e9a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/11.bb8852ef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/12.43dc56b9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/13.600a4bc3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/14.03c9c185.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/15.e2859453.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/16.8bfd4783.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/17.49fdb1f4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/18.1f2c72b1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/19.42c87290.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/20.ec823e78.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/21.daf7e069.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/22.f67be05b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/23.ca430cd9.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/24.21b98634.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/25.c00dc0b4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/26.d981c876.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/27.7039a4df.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/28.69df2930.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/29.d01987c7.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/3.a5e2ad60.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/30.da43a06b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/31.9d6ed078.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/32.7129312a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/33.02b71481.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/34.9ecdd35a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/35.021dea70.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/36.7f3d7df4.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/37.68813c86.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/38.18bc1195.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/39.048b8f10.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/4.8431eaef.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/40.f35d20f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/41.43d1a2bd.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/42.8c525bd2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/43.7fdb3670.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/44.1b1333b2.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/45.91d17848.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/46.9ebc1015.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/47.f3313086.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/48.41b12be1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/49.e6725280.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/5.15f0133f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/50.176d9554.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/51.814ac319.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/52.715c2202.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/53.5c43e0d8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/55.98308d2b.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/56.1dadd8ba.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/57.f60be398.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/58.da8c3034.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/59.8cc0e12e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/6.49c9592f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/60.0074c1e3.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/61.c714c853.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/62.ecdf35f8.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/63.3830ddfa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/64.5c02d345.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/65.7d52ebc5.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/66.e291c93e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/67.309bc9aa.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/68.2ba6c36f.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/69.3e452e14.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/7.bf3cb37a.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/70.1c5341a1.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/71.4c2b1f71.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/72.770842b0.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/8.b9961f2e.js"><link rel="prefetch" href="/mapgis-pan-spatial-map-docs/assets/js/9.ffa94cd0.js">
+    <link rel="stylesheet" href="/mapgis-pan-spatial-map-docs/assets/css/0.styles.5aa843c2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mapgis-pan-spatial-map-docs/zh/" class="home-link router-link-active"><img src="/mapgis-pan-spatial-map-docs/logo.png" alt="MapGIS Pan-Spatial Map" class="logo"> <span class="site-name can-hide">MapGIS Pan-Spatial Map</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/guide/development/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-pan-spatial-map-docs/zh/config/common/base.html" class="nav-link">
+  配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-pan-spatial-map-docs/zh/guide/development/config.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-pan-spatial-map" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>产品介绍</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mapgis-pan-spatial-map-docs/zh/guide/" aria-current="page" class="sidebar-link">开始使用</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进阶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>扩展</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其它</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h1> <h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <div class="language-text extra-class"><pre class="language-text"><code>|── app.json                   # 描述App内容
+|── app                        # 应用目录
+    |── configs                # 应用配置目录，主要用来存放设置过的widget的config.json
+       |── xxx                 # 单个widget（跟widget同名）
+           |── config.json     # widget配置文件，会在应用的config.json中引用
+    |── images                 # 应用图片目录，用来存放应用默认logo和其他图片资源
+    |── widgets                # widget目录
+       |── xxx                 # 单个widget（跟widget同名）
+           |── manifest.json   # 描述widget内容
+           |── config.json     # 描述widget配置
+           |── images          # widget图片目录，用来存放widget图标等
+    |── themes                 # theme目录
+       |── xxx                 # 单个主题
+           |── manifest.json   # 描述主题内容
+           |── layout.json     # 描述主题布局
+           |── images          # 主题图片目录，用来存放主题图标等
+</code></pre></div><h2 id="命名规范"><a href="#命名规范" class="header-anchor">#</a> 命名规范</h2> <p>所有文件应该使用 kebab-case。</p> <h2 id="widget"><a href="#widget" class="header-anchor">#</a> Widget</h2> <h3 id="widget-类型"><a href="#widget-类型" class="header-anchor">#</a> widget 类型</h3> <p>支持两种类型的 widget：in-panel 和 off-panel，每个 widget 都有一个 openAtStart 控制其是否初始打开。</p> <ol><li><strong>In-panel</strong>，需要在一个 panel 中打开的</li> <li><strong>Off-panel</strong>，不需要在 panel 中打开</li></ol> <h3 id="所需文件"><a href="#所需文件" class="header-anchor">#</a> 所需文件</h3> <p>最少情况下，一个 widget 只有 1 个 manifest 文件。</p> <h3 id="widget-manifest"><a href="#widget-manifest" class="header-anchor">#</a> Widget manifest</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token comment">// widget的标识名称，需要与widget文件夹的名称一致</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;比例尺&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的作者</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的描述</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget的组件名，如果inPanel为false，则表示widget本身UI，</span>
+  <span class="token comment">// 如果inPanel为true，其icon会显示到地图占位区域或内容区域中，widget本身UI会展示到Panel中</span>
+  <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget图标,默认使用images/icon.svg</span>
+  <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;iconname&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// widget属性表</span>
+  <span class="token string">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 确定widget是否支持2D，默认为true</span>
+    <span class="token string">&quot;2D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 确定widget是否支持3D，默认为false</span>
+    <span class="token string">&quot;3D&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设置widget是否inPanel，如果不在一个panel中，widget会直接展示，默认为true</span>
+    <span class="token string">&quot;inPanel&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设置为true的话，默认加载config文件，反之不加载，默认为true</span>
+    <span class="token string">&quot;hasConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设为为true的话，builder会加载setting页。如果为false并且widget可配置则展示一个Json编辑器</span>
+    <span class="token string">&quot;hasSettingPage&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">// 如果有setting页，settingUiComponent表示设置页ui的组件名</span>
+    <span class="token string">&quot;settingUiComponent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化）</span>
+    <span class="token string">&quot;windowSize&quot;</span><span class="token operator">:</span> <span class="token string">&quot;max&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// 确定widget的窗口是否有边距，默认为true，可设置为false</span>
+    <span class="token string">&quot;hasPadding&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="使-widget-可配置"><a href="#使-widget-可配置" class="header-anchor">#</a> 使 Widget 可配置</h3> <p>要使 widget 可配置，需要两个步骤</p> <ol><li>widget 中有一个配置文件 config.json</li> <li>配置 manifest.json 文件中的 properties. hasConfig 为 true</li></ol> <p>最佳实践是，如果一个 widget 可配置，就需要提供一个配置 UI，让其可以在应用中有自己专属的配置页面。请遵循下面 widget 的约定：</p> <ol><li>配置 manifest.json 文件中的 properties. hasSettingPage 为 true</li> <li>配置 manifest.json 文件中的 properties. settingUiComponent</li></ol> <h2 id="主题"><a href="#主题" class="header-anchor">#</a> 主题</h2> <p>主题是一个用户界面元素集合，它定义了 App 的外观，布局，app 导航，和 map 上基础 UI 组件（比如：比例尺、鹰眼图等）。
+通过主题，可以打造个性化的应用界面、用户交互体验、和品牌样式。
+主题元素主要包括：widget panel、style、布局。</p> <table><thead><tr><th><div style="width:100px;">主题元素</div></th> <th>定义</th></tr></thead> <tbody><tr><td>Panel</td> <td>Panel是展示widget内容的UI窗口。可以定制特定主题上，具有特殊功能和样式的Panel。比如：你可以开发一个可以在屏幕上随意拖动，并且拥有紫色主题样式的Panel。通过主题Panel，widget开发者可以集中在开发widget内部功能，而不用担心widget怎么展示。一个主题可以包含多个Panels。</td></tr> <tr><td>样式</td> <td>一个主题可以包含多个样式。</td></tr> <tr><td>布局</td> <td>本质上来说，布局是一种规定UI元素在屏幕上的位置的app配置。</td></tr></tbody></table> <h3 id="主题-manifest"><a href="#主题-manifest" class="header-anchor">#</a> 主题 manifest</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token comment">// theme的名称</span>
+  <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;全空间一张图经典主题&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// theme的作者</span>
+  <span class="token string">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// theme的描述</span>
+  <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// theme的组件名</span>
+  <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpPanSpatialMapClassicTheme&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// theme的样式集合</span>
+  <span class="token string">&quot;styles&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 样式名称</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dust-red&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 样式描述</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;薄暮&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 主题颜色</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f5222d&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 主题，描述布局、模式等</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;volcano&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;火山&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fa541c&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sunrise-yellow&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;日出&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#fadb14&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;polar-green&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;极光绿&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#3eaf7c&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cyan&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;明青&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#13c2c2&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;daybreak-blue&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;拂晓蓝&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#1890ff&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;golden-purple&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;酱紫&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#722ed1&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;magenta&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;法式洋红&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#eb2f96&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dark&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;暗蓝&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#1890ff&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;night&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// theme的布局内容区域集合，通过内容区域把widget分组</span>
+  <span class="token string">&quot;contents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 对应的组名</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;header&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 描述</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;头部导航条&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 组件名称</span>
+      <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpPanSpatialMapClassicHeader&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toolbar&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;工具条&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpPanSpatialMapClassicToolbar&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// widget最大数目，如果未设置，数目不限制</span>
+      <span class="token string">&quot;maxWidgets&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;左侧导航条&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpPanSpatialMapClassicLeft&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;footer&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;底部展示区域&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpPanSpatialMapFooter&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="主题样式"><a href="#主题样式" class="header-anchor">#</a> 主题样式</h3> <p>定义样式名称、描述和背景、字体。其中 color 指向主题颜色， theme 指向主题风格，这里的样式 name，会在 App 的配置 config.json 中用到。</p> <h3 id="主题内容区域"><a href="#主题内容区域" class="header-anchor">#</a> 主题内容区域</h3> <p>一个主题布局内部可能有多个内容区域，每个内容区域都可以放置多个 widget，来进行导航，可设置最大的 widget 数目，内容区域与在 App 的配置 app.json 中 contentWidgets.groups 下同名的组对应。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 比如manifest定义的content为launch，它将会对contentWidgets.groups下content名为launch的组提供导航能力</span>
+<span class="token comment">// themes/launchpad-theme/manifest.json</span>
+<span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token string">&quot;contents&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">// 对应的组名</span>
+      <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toolbar&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 应用app.json</span>
+<span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token comment">// 内容widgets，由布局的内容区域去使用</span>
+  <span class="token string">&quot;contentWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 内容widgets分为多组，每组对应布局中的一个内容区域（主题manifest.json中的contents）</span>
+    <span class="token string">&quot;groups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token comment">// 组名</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toolbar&quot;</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+   <span class="token punctuation">}</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>同时也可以设置此区域内的 widget 结构，用于分组，可用于菜单和扩展列表。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 可选，定义widget结构，用于分类，形成菜单或扩展项</span>
+<span class="token string">&quot;widgetStructure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_2&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder_1&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 可选，类型：folder，默认为widget</span>
+    <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 图标</span>
+    <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 名称</span>
+    <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 子widgets</span>
+    <span class="token string">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_3&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder_1_1&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token string">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_4&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><p>以上会形成类似下面这样的结构，在设计器没有支持组编辑之前，只能通过手动修改文件。</p> <div class="language-text extra-class"><pre class="language-text"><code>widget_2 | folder_1
+           ── widget_3
+           ── folder_1_1
+              ── widget_4
+</code></pre></div><h3 id="布局"><a href="#布局" class="header-anchor">#</a> 布局</h3> <p>布局是一个模板配置文件。虽然它和 app 的 config 文件使用一样的格式，但是它只是一个子集。</p> <p>在布局中，使用 URI 和位置属性来定义 mapWidgets，使用 URL 来定义 contentWidgets。</p> <p>那些只包含位置属性且定义了 placeholder 为 true 的 widget 被叫做占位空间，当配置的时候它允许加入一个 widget。</p> <ul><li><strong>mapWidgets</strong>: 地图 widgets，都是相对于 map 的，可以定义占位空间，对于 off-panel，设计器可以设置 visible，可以进行拖动（只要 dragble 不为 false）。</li> <li><strong>contentWidgets</strong>：内容 widgets，用来供页面导航使用，加入的 widget 必须以 group 的形式存在，添加到布局的 content 中。</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;mapWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token comment">// 默认该主题布局配置了地图模式切换按钮，在地图容器的左下角，距离左边10px，距离下边36px</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/map-mode-picker&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bottom-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">36</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 默认该主题布局配置了缩放按钮，在地图容器的左下角，距离左边10px，距离下边78px</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/zoom&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bottom-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">78</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 默认该主题布局配置了比例尺，在地图容器的右下角</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/legend&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bottom-right&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 默认该主题布局配置了综合查询，在地图容器的左下角</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/comprehensive-query&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 下面5个是占位空间</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">94</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">136</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">178</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">52</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token string">&quot;contentWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;groups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;header&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;relativeTo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;content&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;toolbar&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="app"><a href="#app" class="header-anchor">#</a> App</h2> <h3 id="app-json"><a href="#app-json" class="header-anchor">#</a> app.json</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 这个文件描述应用配置信息</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// 可选，应用logo，默认值为images/app-logo.svg</span>
+  <span class="token string">&quot;logo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;images/logo.png&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 可选，应用标题</span>
+  <span class="token string">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS全空间一张图&quot;</span><span class="token punctuation">,</span>
+  <span class="token comment">// 可选，应用副标题</span>
+  <span class="token string">&quot;subtitle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+  <span class="token comment">//可选. 应用包含的外链列表</span>
+  <span class="token string">&quot;links&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://www.smaryun.com&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MapGIS Cloud&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 必须，主题</span>
+  <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 主题名称，指向themes/name主题</span>
+    <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pan-spatial-map-classic-theme&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 可选，系统主题风格，如果不存在，则使用customStyle</span>
+    <span class="token string">&quot;style&quot;</span><span class="token operator">:</span> <span class="token string">&quot;night&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// 可选，自定义主题风格，必须跟style至少存在一个</span>
+    <span class="token string">&quot;customStyle&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#1890ff&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;theme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;night&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 地图widgets</span>
+  <span class="token string">&quot;mapWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 可选，地图上所有inPanel为true的widget所展示的面板，显示位置根据widget自动计算弹出，</span>
+    <span class="token comment">// 如果不指定，使用系统默认面板MpMapWidgetPanel</span>
+    <span class="token string">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 面板组件名</span>
+      <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpMapWidgetPanel&quot;</span><span class="token punctuation">,</span>
+      <span class="token comment">// 可选，显示模式（single/multi），只有relativeTo为map才有效</span>
+      <span class="token comment">// 如果没有指定，则默认为single</span>
+      <span class="token string">&quot;mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;multi&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// widget</span>
+    <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token comment">// widgetId，builder时动态生成</span>
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_1&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// widget标识</span>
+        <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/scalebar&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，如果没有设置，使用widget目录内图标（manifest.json指向的icon）</span>
+        <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，如果没有设置，使用widget名称（manifest.json指向的name）</span>
+        <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，widget位置，如果没有设置，默认是相对于map的left=0，top=0</span>
+        <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 可选，widget位置锚点，默认值为top-left，可以设置为top-right、top-left、bottom-right、bottom-left、top-center、center-right、bottom-center、center-left、center-center</span>
+          <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-left&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，widget水平和垂直方向偏移,默认值为0</span>
+          <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，如果没有设置，默认指向widget配置config.json（只要manifest.json的hasConfig为true）</span>
+        <span class="token comment">// 如果设置为字符串，表示自定义的config的位置，例：&quot;config&quot;: &quot;configs/Scalebar/config.json&quot;</span>
+        <span class="token comment">// 如果设置为对象，表示本widget实际的配置参数</span>
+        <span class="token string">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，表示是否在应用启动的时候打开该widget，默认值为false</span>
+        <span class="token comment">// 只有对于能够在面板中展示的widget有效</span>
+        <span class="token comment">// 如果有多个在地图上的widget设置为true，只有第一个有效</span>
+        <span class="token comment">// 如果有多个在内容区域中的widget设置为true，由内容区域决定如何去打开</span>
+        <span class="token string">&quot;openAtStart&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，表示能否在设计器中进行位置调整，默认为true</span>
+        <span class="token comment">// 对于某些widget，只能在固定位置，需要设置为false</span>
+        <span class="token string">&quot;dragable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，表示是否可见，默认为true，可以通过设置其为false，来进行隐藏</span>
+        <span class="token string">&quot;visible&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，表示是否是占位微件，默认为false，占位微件一般在主题布局中定义，在搭建时进行定义</span>
+        <span class="token string">&quot;placeholder&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 内容widgets，由布局的内容区域去使用</span>
+  <span class="token string">&quot;contentWidgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 内容widgets分为多组，每组对应布局中的一个内容区域（主题manifest.json中的contents）</span>
+    <span class="token string">&quot;groups&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token comment">// 组名</span>
+        <span class="token string">&quot;content&quot;</span><span class="token operator">:</span> <span class="token string">&quot;launch&quot;</span><span class="token punctuation">,</span>
+        <span class="token comment">// 该内容区域包含的widget集合，可以有多个，因为内容区域中的widget只要inPanel为true，</span>
+        <span class="token comment">// 就会放到面板中显示，所以不需要指定position</span>
+        <span class="token string">&quot;widgets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token comment">// widgetId，builder时动态生成</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_2&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// widget标识</span>
+            <span class="token string">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widgets/scalebar&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 可选，如果没有设置，使用widget目录内图标（manifest.json指向的icon）</span>
+            <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 可选，如果没有设置，使用widget名称（manifest.json指向的name）</span>
+            <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，定义widget结构，用于分类，形成菜单或扩展项</span>
+        <span class="token string">&quot;widgetStructure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_2&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder_1&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 可选，类型：folder，默认为widget</span>
+            <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 图标</span>
+            <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 名称</span>
+            <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+            <span class="token comment">// 子widgets</span>
+            <span class="token string">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_3&quot;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder_1_1&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folder&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+
+                <span class="token string">&quot;children&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                  <span class="token punctuation">{</span>
+                    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;widget_4&quot;</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// 可选，该内容区域widgets中所有inPanel为true的widget所展示的面板</span>
+        <span class="token comment">// 如果没有指定，则使用系统默认模板MpContentWidgetPanel</span>
+        <span class="token string">&quot;panel&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 面板组件名</span>
+          <span class="token string">&quot;component&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MpContentWidgetPanel&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，指定弹出面板相对的元素（map/content）</span>
+          <span class="token comment">// 如果没有指定，则默认相对于map</span>
+          <span class="token string">&quot;relativeTo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;content&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，显示模式（single/multi），只有relativeTo为map才有效</span>
+          <span class="token comment">// 如果没有指定，则默认为single</span>
+          <span class="token string">&quot;mode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;multi&quot;</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，面板弹出位置，只有relativeTo为map才有效</span>
+          <span class="token string">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 可选，面板位置锚点，默认值为top-right，可以设置为top-right、top-left、bottom-right、bottom-left、top-center、center-right、bottom-center、center-left、center-center</span>
+            <span class="token string">&quot;anchor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;top-right&quot;</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板水平和垂直方向偏移,默认值为0（单位：像素）</span>
+            <span class="token string">&quot;horizontalOffset&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;verticalOffset&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，相对于主视图顶的距离，默认值为0（单位：像素），当height没有指定，且anchor为'bottom-left', 'bottom-right', 'bottom-center'时生效</span>
+            <span class="token string">&quot;top&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，相对于主视图底的距离，默认值为0（单位：像素），当height没有指定，且anchor为'top-left', 'top-right', 'top-center'时生效</span>
+            <span class="token string">&quot;bottom&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token comment">// 可选，面板样式</span>
+          <span class="token string">&quot;styles&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 可选，是否展开，当position.anchor为top-center、bottom-center、center-left、center-right、center-center时生效</span>
+            <span class="token string">&quot;expand&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板内容宽度，如果没有传，可设置最小宽度和最大宽度并由内容自适应</span>
+            <span class="token string">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板内容高度，如果没有传，查看是否有top或bottom，如果有，将根据距离进行自适应，如果也没有，可设置最小高度和最大高度并由内容自适应</span>
+            <span class="token string">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">480</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板默认最小内容宽度，默认值240（单位：像素）</span>
+            <span class="token string">&quot;minWidth&quot;</span><span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板默认最大内容宽度，默认值为100%，只支持像素单位设置</span>
+            <span class="token string">&quot;maxWidth&quot;</span><span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板默认最小内容宽度，默认值48（单位：像素）</span>
+            <span class="token string">&quot;minHeight&quot;</span><span class="token operator">:</span> <span class="token number">48</span><span class="token punctuation">,</span>
+            <span class="token comment">// 可选，面板默认最大内容宽度，默认值为100%，只支持像素单位设置</span>
+            <span class="token string">&quot;maxHeight&quot;</span><span class="token operator">:</span> <span class="token number">48</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/mapgis-pan-spatial-map-docs/edit/master/docs/zh/guide/development/config.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/3/9 17:19:28</span></div></footer> <!----> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-3414bdeb><div class="my-popup-container" data-v-3414bdeb><div class="my-popup-exit" data-v-3414bdeb></div> <img src="" alt data-v-3414bdeb></div></div></div></div>
+    <script src="/mapgis-pan-spatial-map-docs/assets/js/app.96984c76.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/2.45884394.js" defer></script><script src="/mapgis-pan-spatial-map-docs/assets/js/54.617ed9c6.js" defer></script>
+  </body>
+</html>
